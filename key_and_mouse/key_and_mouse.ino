@@ -1,5 +1,3 @@
-/*
-  KeyboardAndMouseControl
 
   Controls the mouse from five pushbuttons on an Arduino Leonardo, Micro or Due.
 
@@ -82,13 +80,11 @@ void loop() {
   */
 
 //Serial.println(digitalRead(upButton));
-
-
   // use the pushbuttons to control the keyboard:
   if (digitalRead(upButton) == HIGH) {
-    Keyboard.write('u');
-    //Serial.println('high');
-    delay(100);
+    //Keyboard.write('u');
+    Serial.println('high');
+    delay(300);
   }
   
 
